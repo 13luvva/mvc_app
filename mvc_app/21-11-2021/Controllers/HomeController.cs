@@ -33,6 +33,11 @@ namespace _21_11_2021.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ViewResult Thanks()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {
