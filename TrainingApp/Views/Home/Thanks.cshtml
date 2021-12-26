@@ -1,0 +1,26 @@
+﻿@model TrainingApp.Models.StudentResponse
+
+@{ Layout = null; }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <div>
+        <h1>Thank you, @Model.FullName!</h1>
+        @if (Model.Training == "Recruiting")
+        {
+    @:It's great that you're coming.
+}
+else
+{
+    @:You can note only on recruiting course, this course is not available.
+}
+    </div>
+    Click <a asp-action="ListResponses">here</a> to see who is coming.
+</body>
+</html>
